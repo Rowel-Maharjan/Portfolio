@@ -1,0 +1,2 @@
+npm i three @react-three/fiber @react-three/drei react-responsive leva
+npm i @gsap/react gsap
