@@ -10,7 +10,6 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import threejs from "./tech/threejs.svg";
 import express from "./tech/express.png";
-import mysql from "./tech/mysql.png";
 import next from "./tech/Next.png";
 
 
@@ -35,7 +34,6 @@ export {
   tailwind,
   threejs,
   express,
-  mysql,
   next,
   makemytrip,
   passwordmanager,

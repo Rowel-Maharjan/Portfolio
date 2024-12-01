@@ -11,7 +11,6 @@ import {
     figma,
     threejs,
     express,
-    mysql,
     next,
     makemytrip,
     passwordmanager,
@@ -96,10 +95,6 @@ export const technologies = [
     {
         name: "MongoDB",
         icon: mongodb,
-    },
-    {
-        name: "MySql",
-        icon: mysql,
     },
     {
         name: "Three JS",

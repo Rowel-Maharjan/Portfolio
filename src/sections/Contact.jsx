@@ -17,8 +17,8 @@ const Contact = () => {
 
         emailjs
             .send(
-                "service_ysexn8o",
-                "template_b962x6j",
+                import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+                import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
                 {
                     from_name: form.name,
                     to_name: 'Rowel Maharjan',
@@ -27,7 +27,7 @@ const Contact = () => {
                     message: form.message,
                     reply_to: form.email,
                 },
-                "QfWb8WLy6OIaIV29e",
+                import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY,
             )
             .then(
                 () => {
@@ -68,6 +68,7 @@ const Contact = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, delay: 0.1 }}
             className="c-space my-20" id="contact">
+
             <div className="relative min-h-screen flex items-center justify-center flex-col">
                 <div className="contact-container">
                     <h3 className="head-text">Let's Connect</h3>

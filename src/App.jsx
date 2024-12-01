@@ -5,6 +5,7 @@ import Tech from "./sections/Tech"
 import Project from "./sections/Project"
 import Contact from "./sections/Contact"
 import Footer from "./sections/Footer"
+import StarCanvas from "./components/StarCanvas"
 
 
 function App() {
@@ -17,7 +18,10 @@ function App() {
         <About />
         <Tech />
         <Project />
-        <Contact />
+        <div className="relative z-0">
+          <Contact />
+          <StarCanvas />
+        </div>
         <Footer />
       </main>
     </>
