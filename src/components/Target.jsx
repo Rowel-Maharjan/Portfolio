@@ -22,7 +22,6 @@ const Target = (props) => {
             <mesh ref={targetRef} >
                 <primitive object={scene} />
             </mesh>
-
         </group>
     )
 }
