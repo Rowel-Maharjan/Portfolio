@@ -3,3 +3,4 @@ npm i @gsap/react gsap
 npm i maath
 npm i react-globe.gl
 npm install react-tilt react react-dom
+npm i @emailjs/browser

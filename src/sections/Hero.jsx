@@ -90,7 +90,7 @@ const Hero = () => {
                                 scale={sizes.deskScale}
                                 rotation={[0, -Math.PI, 0]}
                                 position={sizes.deskPosition} />
-                            {/* <OrbitControls enableZoom={false} maxPolarAngle={Math.PI / 2} /> */}
+                            {/* <OrbitControls enableZoom={false} maxPolarAngle={Math.PI / 2} minPolarAngle={Math.PI / 2} /> */}
                         </HeroCamera>
 
 

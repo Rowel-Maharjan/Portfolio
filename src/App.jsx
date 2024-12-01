@@ -3,6 +3,8 @@ import Hero from "./sections/Hero"
 import About from "./sections/About"
 import Tech from "./sections/Tech"
 import Project from "./sections/Project"
+import Contact from "./sections/Contact"
+import Footer from "./sections/Footer"
 
 
 function App() {
@@ -15,6 +17,8 @@ function App() {
         <About />
         <Tech />
         <Project />
+        <Contact />
+        <Footer />
       </main>
     </>
   )

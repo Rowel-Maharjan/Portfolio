@@ -11,7 +11,6 @@ import tailwind from "./tech/tailwind.png";
 import threejs from "./tech/threejs.svg";
 import express from "./tech/express.png";
 import mysql from "./tech/mysql.png";
-import bootstrap from "./tech/bootstrap.png";
 import next from "./tech/Next.png";
 
 
