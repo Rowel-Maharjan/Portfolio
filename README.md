@@ -1,5 +1,4 @@
 ## ⚙️ Tech Stack
-- Node.js
 - React.js
 - Three.js
 - React Three Fiber

@@ -92,6 +92,9 @@ const About = () => {
               <a href="#contact">
                 <Button name="Contact Me" isBeam containerClass="w-full mt-10" />
               </a>
+              <a href="assets/CV - Rowel Maharjan.pdf" download={true} >
+                <Button name="Download CV" containerClass="w-full mt-2" />
+              </a>
             </div>
           </div>
         </motion.div>
