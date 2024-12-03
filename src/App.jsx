@@ -7,8 +7,11 @@ import Contact from "./sections/Contact"
 import Footer from "./sections/Footer"
 import StarCanvas from "./components/StarCanvas"
 
+import { useInView } from 'react-intersection-observer'; // Import the hook
+
 
 function App() {
+  const { ref, inView } = useInView({ triggerOnce: false, threshold: 0.1 }); // Detect when the section is in view
 
   return (
     <>
@@ -18,9 +21,11 @@ function App() {
         <About />
         <Tech />
         <Project />
-        <div className="relative z-0">
+        <div ref={ref} className="relative z-0">
           <Contact />
-          <StarCanvas />
+          {inView && (
+            <StarCanvas />
+          )}
         </div>
         <Footer />
       </main>

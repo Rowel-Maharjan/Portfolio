@@ -18,7 +18,7 @@ import {
     todo,
     productdetail,
     twitter
-} from '../public/assets/index.js';
+} from './assets/index.js';
 
 
 export const navLinks = [
@@ -107,8 +107,7 @@ export const technologies = [
     {
         name: "figma",
         icon: figma,
-    }
-
+    },
 ];
 
 export const projects = [

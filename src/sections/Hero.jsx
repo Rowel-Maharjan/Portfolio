@@ -14,6 +14,8 @@ import HeroCamera from '../components/HeroCamera'
 import Button from '../components/Button'
 import { motion } from 'framer-motion'
 
+import { useInView } from 'react-intersection-observer'; // Import the hook
+
 const Hero = () => {
 
     // const controls = useControls('HackerRoom', {
@@ -53,6 +55,7 @@ const Hero = () => {
     //         max: 10,
     //     }
     // })
+    const { ref, inView } = useInView({ triggerOnce: false, threshold: 0.1 }); // Detect when the section is in view
 
     const isSmall = useMediaQuery({ maxWidth: 440 })
     const isMobile = useMediaQuery({ maxWidth: 912 })
@@ -79,9 +82,9 @@ const Hero = () => {
                 </motion.p>
             </div>
 
-            <div className='w-full h-full absolute inset-0'>
+            <div ref={ref} className='w-full h-full absolute inset-0'>
                 {/* <Leva /> */}
-                <Canvas className='w-full h-full'>
+                {inView && <Canvas className='w-full h-full'>
                     <Suspense fallback={<CanvasLoader />}>
                         <PerspectiveCamera makeDefault position={[0, 0, 22]} />
 
@@ -107,6 +110,7 @@ const Hero = () => {
                         <spotLight position={[0, 1, 0]} intensity={30} castShadow />
                     </Suspense>
                 </Canvas>
+                }
             </div>
             <div className='absolute bottom-7 left-0 right-0 z-10 c-space w-fit mx-auto'>
                 <a href="#about" className='w-fit'>
@@ -114,7 +118,7 @@ const Hero = () => {
                 </a>
 
             </div>
-        </section>
+        </section >
 
     )
 }

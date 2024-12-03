@@ -1,6 +1,6 @@
 import React from 'react'
-import github from '../../public/assets/github.png'
-import arrowup from '../../public/assets/arrow-up.png'
+import github from '../assets/github.png'
+import arrowup from '../assets/arrow-up.png'
 import { Tilt } from 'react-tilt'
 import { motion } from 'framer-motion'
 
@@ -16,7 +16,7 @@ const ProjectCard = ({
         <motion.div
             initial={{ opacity: 0, y: -50 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1.25, delay: 0.1, type: 'spring' }}
+            transition={{ duration: 1.25, delay: 0.1 }}
             className='flex flex-wrap gap-7'
         >
             <Tilt

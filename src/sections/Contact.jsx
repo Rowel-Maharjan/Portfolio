@@ -119,7 +119,7 @@ const Contact = () => {
                         <button className="field-btn" type="submit" disabled={loading}>
                             {loading ? 'Sending...' : 'Send Message'}
 
-                            <img src="/assets/arrow-up.png" alt="arrow-up" className="field-btn_arrow" />
+                            <img src="src/assets/arrow-up.png" alt="arrow-up" className="field-btn_arrow" />
                         </button>
                     </form>
                 </div>

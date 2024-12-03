@@ -26,11 +26,11 @@ const Navbar = () => {
                 <div className='max-w-7xl mx-auto'>
                     <div className='flex justify-between items-center py-5 mx-auto c-space'>
                         <a href="#home" className='text-neutral-400 font-bold text-xl hover:text-white transition-colors duration-500 flex '>
-                            <img className='w-8 h-8 mr-2' src={"assets/logo.png"} alt="Logo Not found" />
+                            <img className='w-8 h-8 mr-2' src={"src/assets/logo.png"} alt="Logo Not found" />
                             Rowel
                         </a>
                         <button onClick={toggleMenu} className='sm:hidden flex' aria-label='Toggle menu'>
-                            <img src={isOpen ? "assets/close.svg" : "assets/menu.svg"} alt="Toggle" className='w-6 h-6' />
+                            <img src={isOpen ? "src/assets/close.svg" : "src/assets/menu.svg"} alt="Toggle" className='w-6 h-6' />
                         </button>
                         <nav className='sm:flex hidden'>
                             <NavItems />
