@@ -1,4 +1,5 @@
 import React from 'react'
+import download from '../assets/download.png'
 
 const Button = ({ name, isBeam = false, containerClass }) => {
     return (
@@ -8,7 +9,7 @@ const Button = ({ name, isBeam = false, containerClass }) => {
                 <span className='btn-ping_dot' />
             </div>}
             {
-                !isBeam && <img src="src/assets/download.png" alt="Download" className='w-6 h-6' />
+                !isBeam && <img src={download} alt="Download" className='w-6 h-6' />
             }
             {name}
         </button>

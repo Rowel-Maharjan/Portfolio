@@ -19,6 +19,17 @@ import spotify from "./spotify.png";
 import todo from "./todo.png";
 import productdetail from "./productdetail.png";
 import twitter from "./twitter.png";
+import logo from './logo.png';
+import twittersvg from './twitter.svg'
+import insta from './instagram.svg'
+import github from './github.svg'
+import grid1 from './grid1.png'
+import grid2 from './grid2.png'
+import grid3 from './grid3.png'
+import grid4 from './grid4.png'
+import arrowup from './arrow-up.png'
+import tick from './tick.svg'
+import copy from './copy.svg'
 
 
 export {
@@ -41,4 +52,15 @@ export {
   todo,
   productdetail,
   twitter,
+  logo,
+  twittersvg,
+  insta,
+  github,
+  grid1,
+  grid2,
+  grid3,
+  grid4,
+  arrowup,
+  tick,
+  copy,
 };

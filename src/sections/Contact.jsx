@@ -3,6 +3,7 @@ import { useState } from 'react';
 import 'react-toastify/dist/ReactToastify.css';
 import { toast } from 'react-toastify';
 import { motion } from 'framer-motion';
+import { arrowup } from '../assets';
 
 const Contact = () => {
     const [loading, setLoading] = useState(false);
@@ -119,7 +120,7 @@ const Contact = () => {
                         <button className="field-btn" type="submit" disabled={loading}>
                             {loading ? 'Sending...' : 'Send Message'}
 
-                            <img src="src/assets/arrow-up.png" alt="arrow-up" className="field-btn_arrow" />
+                            <img src={arrowup} alt="arrow-up" className="field-btn_arrow" />
                         </button>
                     </form>
                 </div>

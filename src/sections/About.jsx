@@ -3,6 +3,7 @@ import Globe from 'react-globe.gl';
 import { motion } from 'framer-motion';
 import Button from '../components/Button.jsx';
 import { useInView } from 'react-intersection-observer'; // Import the hook
+import { grid1, grid2, grid3, grid4, tick, copy } from '../assets/index.js';
 
 const About = () => {
   const [hasCopied, setHasCopied] = useState(false);
@@ -35,7 +36,7 @@ const About = () => {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="col-span-1 xl:row-span-3">
           <div className="grid-container">
-            <img src="src/assets/grid1.png" alt="grid-1" className="w-full sm:h-[276px] h-fit object-contain" />
+            <img src={grid1} alt="grid-1" className="w-full sm:h-[276px] h-fit object-contain" />
             <div>
               <p className="grid-headtext">Hi, I’m Rowel Maharjan</p>
               <p className="grid-subtext">
@@ -52,7 +53,7 @@ const About = () => {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="col-span-1 xl:row-span-3">
           <div className="grid-container">
-            <img src="src/assets/grid2.png" alt="grid-2" className="w-full sm:h-[276px] h-fit object-contain" />
+            <img src={grid2} alt="grid-2" className="w-full sm:h-[276px] h-fit object-contain" />
             <div>
               <p className="grid-headtext">Tech Stack</p>
               <p className="grid-subtext">
@@ -108,7 +109,7 @@ const About = () => {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="xl:col-span-2 xl:row-span-3">
           <div className="grid-container">
-            <img src="src/assets/grid3.png" alt="grid-3" className="w-full sm:h-[266px] h-fit object-contain" />
+            <img src={grid3} alt="grid-3" className="w-full sm:h-[266px] h-fit object-contain" />
             <div>
               <p className="grid-headtext">My Passion for Coding</p>
               <p className="grid-subtext">
@@ -127,14 +128,14 @@ const About = () => {
           className="xl:col-span-1 xl:row-span-2">
           <div className="grid-container">
             <img
-              src="src/assets/grid4.png"
+              src={grid4}
               alt="grid-4"
               className="w-full md:h-[126px] sm:h-[276px] h-fit object-cover sm:object-top"
             />
             <div className="space-y-2">
               <p className="grid-subtext text-center">Contact me</p>
               <div className="copy-container" onClick={handleCopy}>
-                <img src={hasCopied ? 'src/assets/tick.svg' : 'src/assets/copy.svg'} alt="copy" />
+                <img src={hasCopied ? tick : copy} alt="copy" />
                 <p className="lg:text-2xl md:text-xl font-medium text-gray_gradient text-white">rowelmhj@gmail.com</p>
               </div>
             </div>
