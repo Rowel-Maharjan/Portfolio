@@ -31,6 +31,8 @@ import arrowup from './arrow-up.png'
 import tick from './tick.svg'
 import copy from './copy.svg'
 
+import CV from './CV - Rowel Maharjan.pdf'
+
 
 export {
   css,
@@ -63,4 +65,5 @@ export {
   arrowup,
   tick,
   copy,
+  CV
 };

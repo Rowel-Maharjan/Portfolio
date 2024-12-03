@@ -16,34 +16,7 @@ import { motion } from 'framer-motion'
 
 import { useInView } from 'react-intersection-observer'; // Import the hook
 
-const mainLoad = (isMobile, sizes) => {
-    return <Canvas className='w-full h-full'>
-        <Suspense fallback={<CanvasLoader />}>
-            <PerspectiveCamera makeDefault position={[0, 0, 22]} />
 
-            <HeroCamera isMobile={isMobile}>
-                <HackerRoom
-                    scale={sizes.deskScale}
-                    rotation={[0, -Math.PI, 0]}
-                    position={sizes.deskPosition} />
-                {/* <OrbitControls enableZoom={false} maxPolarAngle={Math.PI / 2} minPolarAngle={Math.PI / 2} /> */}
-            </HeroCamera>
-
-
-            <group>
-                <Target position={sizes.targetPosition} />
-                <ReactLogo position={sizes.reactLogoPosition} />
-                <Cube position={sizes.cubePosition} />
-                <Rings position={sizes.ringPosition} />
-            </group>
-
-
-            <ambientLight intensity={1} />
-            <directionalLight position={[10, 10, 10]} intensity={1.5} />
-            <spotLight position={[0, 1, 0]} intensity={30} castShadow />
-        </Suspense>
-    </Canvas>
-}
 
 const Hero = () => {
 
@@ -92,6 +65,35 @@ const Hero = () => {
 
     const sizes = calculateSizes(isSmall, isMobile, isTablet)
 
+    function mainLoad(isMobile, sizes) {
+        return (<Canvas className='w-full h-full'>
+            <Suspense fallback={<CanvasLoader />}>
+                <PerspectiveCamera makeDefault position={[0, 0, 22]} />
+
+                <HeroCamera isMobile={isMobile}>
+                    <HackerRoom
+                        scale={sizes.deskScale}
+                        rotation={[0, -Math.PI, 0]}
+                        position={sizes.deskPosition} />
+                    {/* <OrbitControls enableZoom={false} maxPolarAngle={Math.PI / 2} minPolarAngle={Math.PI / 2} /> */}
+                </HeroCamera>
+
+
+                <group>
+                    <Target position={sizes.targetPosition} />
+                    <ReactLogo position={sizes.reactLogoPosition} />
+                    <Cube position={sizes.cubePosition} />
+                    <Rings position={sizes.ringPosition} />
+                </group>
+
+
+                <ambientLight intensity={1} />
+                <directionalLight position={[10, 10, 10]} intensity={1.5} />
+                <spotLight position={[0, 1, 0]} intensity={30} castShadow />
+            </Suspense>
+        </Canvas>)
+    }
+
     return (
         <section className='min-h-screen w-full flex flex-col relative' id='home'>
             <div className='w-full mx-auto flex flex-col sm:mt-36 mt-20 c-space gap-3'>
@@ -113,7 +115,8 @@ const Hero = () => {
 
             <div ref={ref} className='w-full h-full absolute inset-0'>
                 {/* <Leva /> */}
-                {isMobile ? (inView && mainLoad(isMobile, sizes)) : mainLoad(isMobile, sizes)}
+                {isMobile ? inView && mainLoad(isMobile, sizes) : mainLoad(isMobile, sizes)}
+
             </div>
             <div className='absolute bottom-7 left-0 right-0 z-10 c-space w-fit mx-auto'>
                 <a href="#about" className='w-fit'>

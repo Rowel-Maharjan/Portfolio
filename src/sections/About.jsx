@@ -3,12 +3,15 @@ import Globe from 'react-globe.gl';
 import { motion } from 'framer-motion';
 import Button from '../components/Button.jsx';
 import { useInView } from 'react-intersection-observer'; // Import the hook
-import { grid1, grid2, grid3, grid4, tick, copy } from '../assets/index.js';
+import { grid1, grid2, grid3, grid4, tick, copy, CV } from '../assets/index.js';
+import { useMediaQuery } from 'react-responsive'
 
 const About = () => {
   const [hasCopied, setHasCopied] = useState(false);
   const globeEl = useRef();
-  const { ref, inView } = useInView({ triggerOnce: false, threshold: 0.1 }); // Detect when the section is in view
+  const isMobile = useMediaQuery({ maxWidth: 912 })
+
+  const { ref, inView } = useInView({ triggerOnce: isMobile ? false : true, threshold: 0.1 }); // Detect when the section is in view
 
   const handleCopy = () => {
     navigator.clipboard.writeText('rowelmhj@gmail.com');
@@ -95,7 +98,7 @@ const About = () => {
               <a href="#contact">
                 <Button name="Contact Me" isBeam containerClass="w-full mt-10" />
               </a>
-              <a href="src/assets/CV - Rowel Maharjan.pdf" download={true} >
+              <a href={CV} download={true} >
                 <Button name="Download CV" containerClass="w-full mt-2" />
               </a>
             </div>
