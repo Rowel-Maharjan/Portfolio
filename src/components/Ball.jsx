@@ -4,13 +4,16 @@ import { Decal, Float, OrbitControls, Preload } from '@react-three/drei';
 import { TextureLoader } from 'three';
 import { useLoader } from '@react-three/fiber';
 import { Canvas } from '@react-three/fiber';
+import { useMediaQuery } from 'react-responsive'
+
 
 // BallCanvas to only be rendered once and reused for all balls
 const BallCanvas = React.memo(({ icons }) => {
+    const isMobile = useMediaQuery({ maxWidth: 912 })
     return (
         <Canvas dpr={[1, 2]} gl={{ preserveDrawingBuffer: true }} style={{ height: '100%', width: '100%' }}>
             <Suspense fallback={<CanvasLoader />}>
-                <OrbitControls rotation={true} enableZoom={false} />
+                {!isMobile && <OrbitControls enableZoom={false} />}
                 {icons.map((icon, index) => <BallCanvasItem key={index} img={icon} />)}
             </Suspense>
             <Preload all />
