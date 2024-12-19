@@ -17,7 +17,8 @@ import {
     spotify,
     todo,
     productdetail,
-    twitter
+    twitter,
+    jobPortal
 } from './assets/index.js';
 
 
@@ -265,5 +266,27 @@ export const projects = [
         image: twitter,
         source_code_link: "https://github.com/Rowel-Maharjan/Product-Detail-Page",
         live_link: "https://product-detail-page-theta.vercel.app/"
+    },
+    {
+        name: "Job Portal",
+        description:
+            "EasyJob is a modern React-based job portal that connects job seekers and employers effortlessly. It features an extensive job listing system with advanced search and filtering options. Job seekers can create profiles, upload resumes, and track applications, while employers manage postings and review candidates through a dedicated dashboard. With responsive design and SEO optimization, EasyJob offers a seamless user experience across devices and boosts visibility, making job hunting and hiring efficient.",
+        tags: [
+            {
+                name: "supabase",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "react",
+                color: "green-text-gradient",
+            },
+            {
+                name: "clerk",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: jobPortal,
+        source_code_link: "https://github.com/Rowel-Maharjan/Job-Portal",
+        live_link: "https://roweljobportal.vercel.app/"
     },
 ];

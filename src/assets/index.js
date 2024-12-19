@@ -30,6 +30,7 @@ import grid4 from './grid4.png'
 import arrowup from './arrow-up.png'
 import tick from './tick.svg'
 import copy from './copy.svg'
+import jobPortal from './jobPortal.png'
 
 import CV from './CV - Rowel Maharjan.pdf'
 
@@ -65,5 +66,6 @@ export {
   arrowup,
   tick,
   copy,
-  CV
+  CV,
+  jobPortal
 };
