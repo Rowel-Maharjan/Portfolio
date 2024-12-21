@@ -286,8 +286,8 @@ export const projects = [
             },
         ],
         image: twitter,
-        source_code_link: "https://github.com/Rowel-Maharjan/Product-Detail-Page",
-        live_link: "https://product-detail-page-theta.vercel.app/"
+        source_code_link: "https://github.com/Rowel-Maharjan/Twitter-clone-Tailwind-CSS-",
+        live_link: "https://twitterclone.freewebhostmost.com/"
     },
    
 ];
