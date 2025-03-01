@@ -291,3 +291,122 @@ export const projects = [
     },
    
 ];
+
+
+export const topPart = [
+    {
+      name: "Node.js",
+      image: "/tools/nodejs.svg",
+    },
+    {
+      name: "Express",
+      image: "/tools/express.svg",
+    },
+    {
+      name: "React.js",
+      image: "/tools/reactjs.svg",
+    },
+    {
+      name: "Next.js",
+      image: "/tools/nextjs.svg",
+    },
+    {
+      name: "JS",
+      image: "/tools/js.svg",
+    },
+    {
+      name: "TypeScript",
+      image: "/tools/typescript.svg",
+    },
+    {
+      name: "MERN",
+      image: "/tools/mern.svg",
+    },
+    {
+      name: "Tailwind",
+      image: "/tools/tailwind.svg",
+    },
+    {
+      name: "MongoDB",
+      image: "/tools/mongodb.svg",
+    },
+  ];
+  
+  export const middlePart = [
+    {
+      name: "AI",
+      image: "/tools/ai.png",
+    },
+    {
+      name: "LLM",
+      image: "/tools/llm.png",
+    },
+    {
+      name: "Python",
+      image: "/tools/python.svg",
+    },
+    {
+      name: "HTML",
+      image: "/tools/html.svg",
+    },
+    {
+      name: "CSS",
+      image: "/tools/css.svg",
+    },
+    {
+      name: "prisma",
+      image: "/tools/prisma.svg",
+    },
+    {
+      name: "git",
+      image: "/tools/git.svg",
+    },
+    {
+      name: "Three JS",
+      image: "/tools/threejs.svg",
+    },
+    {
+      name: "Redux",
+      image: "/tools/redux.svg",
+    },
+    {
+      name: "Supabase",
+      image: "/tools/supabase.svg",
+    }
+  ];
+  
+  export const bottomPart = [
+    {
+      name: "Cloudflare",
+      image: "/tools/cloudflare.svg",
+    },
+    {
+      name: "MySQL",
+      image: "/tools/mysql.svg",
+    },
+    {
+      name: "Figma",
+      image: "/tools/figma.svg",
+    },
+    {
+      name: "Canva",
+      image: "/tools/canva.svg",
+    },
+    {
+      name: "ClickUp",
+      image: "/tools/clickup.png",
+    },
+    {
+      name: "PostgreSQL",
+      image: "/tools/postgress.svg",
+    },
+    {
+      name: "GSAP",
+      image: "/tools/gsap.jpeg",
+    },
+    {
+      name: "Framer-Motion",
+      image: "/tools/framer.svg",
+    }
+
+  ];

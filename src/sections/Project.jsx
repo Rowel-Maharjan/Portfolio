@@ -5,7 +5,7 @@ import ProjectCard from '../components/ProjectCard'
 
 const Project = () => {
     return (
-        <section className='my-20 c-space' id='projects'>
+        <section className='my-20 c-space max-w-7xl mx-auto' id='projects'>
             <h3 className='head-text mb-2'>My Selected Work</h3>
             <p className="grid-subtext">
                 Following projects showcases my skills and experience through

@@ -68,7 +68,7 @@ const Contact = () => {
             initial={{ opacity: 0, x: -100 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, delay: 0.1 }}
-            className="c-space my-20" id="contact">
+            className="c-space my-20 max-w-7xl mx-auto" id="contact">
 
             <div className="relative min-h-screen flex items-center justify-center flex-col">
                 <div className="contact-container">

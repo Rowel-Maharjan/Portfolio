@@ -17,7 +17,7 @@ function App() {
 
   return (
     <>
-      <main className='max-w-7xl mx-auto'>
+      <main>
         <Navbar />
         <Hero />
         <About />
@@ -25,9 +25,9 @@ function App() {
         <Project />
         <div ref={ref} className="relative z-0">
           <Contact />
-          {inView && (
+          {/* {inView && (
             <StarCanvas />
-          )}
+          )} */}
         </div>
         <Footer />
         <Analytics />

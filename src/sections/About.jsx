@@ -1,8 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import Globe from 'react-globe.gl';
-import { motion } from 'framer-motion';
 import Button from '../components/Button.jsx';
-import { useInView } from 'react-intersection-observer'; // Import the hook
+import { useInView } from 'react-intersection-observer';
 import { grid1, grid2, grid3, grid4, tick, copy, CV } from '../assets/index.js';
 import { useMediaQuery } from 'react-responsive'
 
@@ -30,13 +29,10 @@ const About = () => {
   }, [inView]); // Re-run when `inView` changes
 
   return (
-    <section className="c-space my-20 text-white" id="about">
+    <section className="c-space my-20 max-w-7xl mx-auto text-white" id="about">
       <div className="grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full">
         {/* First Section */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.1 }}
+        <div
           className="col-span-1 xl:row-span-3">
           <div className="grid-container">
             <img src={grid1} alt="grid-1" className="w-full sm:h-[276px] h-fit object-contain" />
@@ -47,13 +43,10 @@ const About = () => {
               </p>
             </div>
           </div>
-        </motion.div>
+        </div>
 
         {/* Second Section */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
+        <div
           className="col-span-1 xl:row-span-3">
           <div className="grid-container">
             <img src={grid2} alt="grid-2" className="w-full sm:h-[276px] h-fit object-contain" />
@@ -64,17 +57,14 @@ const About = () => {
               </p>
             </div>
           </div>
-        </motion.div>
+        </div>
 
         {/* Third Section */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.3 }}
+        <div
           className="col-span-1 xl:row-span-4">
           <div ref={ref} className="grid-container">
             <div className="rounded-3xl cursor-pointer w-full sm:h-[326px] h-fit flex justify-center items-center">
-              {inView && (
+              {/* {inView && ( */}
                 <Globe
                   ref={globeEl}
                   height={326}
@@ -89,7 +79,7 @@ const About = () => {
                     { lat: 27.6644, lng: 85.3188, text: 'Lalitpur, Nepal', color: 'white', size: 105 }
                   ]}
                 />
-              )}
+              {/* )} */}
             </div>
 
             <div>
@@ -103,13 +93,10 @@ const About = () => {
               </a>
             </div>
           </div>
-        </motion.div>
+        </div>
 
         {/* Fourth Section */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.1 }}
+        <div
           className="xl:col-span-2 xl:row-span-3">
           <div className="grid-container">
             <img src={grid3} alt="grid-3" className="w-full sm:h-[266px] h-fit object-contain" />
@@ -121,13 +108,10 @@ const About = () => {
               </p>
             </div>
           </div>
-        </motion.div>
+        </div>
 
         {/* Fifth Section */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
+        <div
           className="xl:col-span-1 xl:row-span-2">
           <div className="grid-container">
             <img
@@ -143,7 +127,7 @@ const About = () => {
               </div>
             </div>
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );
