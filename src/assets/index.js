@@ -31,6 +31,8 @@ import arrowup from './arrow-up.png'
 import tick from './tick.svg'
 import copy from './copy.svg'
 import jobPortal from './JobPortal.png'
+import netflix from './netflix.png'
+import swasthalaya from './swasthalayas.png'
 
 import CV from './CV - Rowel Maharjan.pdf'
 
@@ -67,5 +69,7 @@ export {
   tick,
   copy,
   CV,
-  jobPortal
+  jobPortal,
+  netflix,
+  swasthalaya
 };
