@@ -185,28 +185,6 @@ export const projects = [
     live_link: "https://www.swasthalayanepal.com/",
   },
   {
-    name: "Spotify Clone",
-    description:
-      "Created a web-based music player enabling users to play, pause, skip tracks, and adjust volume. Focused on building an intuitive interface with responsive design and interactive features to enhance user experience.",
-    tags: [
-      {
-        name: "HTML",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "CSS",
-        color: "green-text-gradient",
-      },
-      {
-        name: "JavaScript",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: spotify,
-    source_code_link: "https://github.com/Rowel-Maharjan/Spotify-clone",
-    live_link: "https://spark.freewebhostmost.com/",
-  },
-  {
     name: "Job Portal",
     description:
       "EasyJob is a modern React-based job portal that connects job seekers and employers effortlessly. It features an extensive job listing system with advanced search and filtering options. Job seekers can create profiles, upload resumes, and track applications, while employers manage postings and review candidates through a dedicated dashboard.",
@@ -227,6 +205,27 @@ export const projects = [
     image: jobPortal,
     source_code_link: "https://github.com/Rowel-Maharjan/Job-Portal",
     live_link: "https://roweljobportal.vercel.app/",
+  },
+  {
+    name: "Spotify Clone",
+    description:
+      "Created a web-based music player enabling users to play, pause, skip tracks, and adjust volume. Focused on building an intuitive interface with responsive design and interactive features to enhance user experience.",
+    tags: [
+      {
+        name: "HTML",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "JavaScript",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: spotify,
+    source_code_link: "https://github.com/Rowel-Maharjan/Spotify-clone",
   },
   {
     name: "Password Manager ",
