@@ -29,7 +29,7 @@ const Footer = () => {
         </div>
 
         <p className="text-white-500">
-          © 2024 Rowel Maharjan. All rights reserved.
+          © {new Date().getFullYear()} Rowel Maharjan. All rights reserved.
         </p>
       </div>
     </footer>
