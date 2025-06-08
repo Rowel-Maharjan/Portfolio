@@ -5,11 +5,12 @@ import Tech from "./sections/Tech"
 import Project from "./sections/Project"
 import Contact from "./sections/Contact"
 import Footer from "./sections/Footer"
-import StarCanvas from "./components/StarCanvas"
+// import StarCanvas from "./components/StarCanvas"
 
 import { useInView } from 'react-intersection-observer'; // Import the hook
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from '@vercel/speed-insights/react';
+import Experience from "./sections/Experience"
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Navbar />
         <Hero />
         <About />
+        <Experience />
         <Tech />
         <Project />
         <div ref={ref} className="relative z-0">
