@@ -1,17 +1,16 @@
-import Navbar from "./sections/Navbar"
-import Hero from "./sections/Hero"
-import About from "./sections/About"
-import Tech from "./sections/Tech"
-import Project from "./sections/Project"
-import Contact from "./sections/Contact"
-import Footer from "./sections/Footer"
+import Navbar from "./sections/Navbar";
+import Hero from "./sections/Hero";
+import About from "./sections/About";
+import Tech from "./sections/Tech";
+import Project from "./sections/Project";
+import Contact from "./sections/Contact";
+import Footer from "./sections/Footer";
 // import StarCanvas from "./components/StarCanvas"
 
-import { useInView } from 'react-intersection-observer'; // Import the hook
-import { Analytics } from "@vercel/analytics/react"
-import { SpeedInsights } from '@vercel/speed-insights/react';
-import Experience from "./sections/Experience"
-
+import { useInView } from "react-intersection-observer"; // Import the hook
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
+import Experience from "./sections/Experience";
 
 function App() {
   const { ref, inView } = useInView({ triggerOnce: false, threshold: 0.1 }); // Detect when the section is in view
@@ -36,7 +35,7 @@ function App() {
         <SpeedInsights />
       </main>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

@@ -6,7 +6,6 @@
 // import { Canvas } from '@react-three/fiber';
 // import { useMediaQuery } from 'react-responsive'
 
-
 // // BallCanvas to only be rendered once and reused for all balls
 // const BallCanvas = React.memo(({ icons }) => {
 //     const isMobile = useMediaQuery({ maxWidth: 912 })
@@ -35,7 +34,6 @@
 //         </Float>
 //     );
 // });
-
 
 // // Main Ball Component
 // const Ball = ({ icon }) => {

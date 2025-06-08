@@ -1,4 +1,4 @@
-@import url('https://fonts.cdnfonts.com/css/general-sans');
+@import url("https://fonts.cdnfonts.com/css/general-sans");
 
 @tailwind base;
 @tailwind components;
@@ -10,7 +10,7 @@
 
 body {
   background: #010103;
-  font-family: 'General Sans', sans-serif;
+  font-family: "General Sans", sans-serif;
 }
 
 @layer utilities {
@@ -59,7 +59,6 @@ body {
     @apply cursor-pointer flex justify-center items-center gap-2;
   }
 
-
   /* button component */
   .btn {
     @apply flex gap-4 items-center justify-center cursor-pointer p-3 rounded-md bg-black-300 transition-all active:scale-95 text-white mx-auto;
@@ -106,25 +105,19 @@ body {
 }
 
 .blue-text-gradient {
-  background: linear-gradient(to top,
-      #2f80ed,
-      #56ccf2);
+  background: linear-gradient(to top, #2f80ed, #56ccf2);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .pink-text-gradient {
-  background: linear-gradient(to top,
-      #ec008c,
-      #fc6767);
+  background: linear-gradient(to top, #ec008c, #fc6767);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .green-text-gradient {
-  background: linear-gradient(to top,
-      #11998e,
-      #38ef7d);
+  background: linear-gradient(to top, #11998e, #38ef7d);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

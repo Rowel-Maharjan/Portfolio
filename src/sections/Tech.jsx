@@ -4,7 +4,7 @@ import { technologies } from "../config";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer"; // Import the hook
 import { useMediaQuery } from "react-responsive";
-import './tech.css'
+import "./tech.css";
 
 import { topPart, middlePart, bottomPart } from "../config";
 
@@ -12,7 +12,9 @@ const Tech = () => {
   const isMobile = useMediaQuery({ maxWidth: 912 });
   return (
     <section className="my-20 ">
-      <h3 className="head-text mb-14 max-w-7xl mx-auto c-space">My Tech Stack</h3>
+      <h3 className="head-text mb-14 max-w-7xl mx-auto c-space">
+        My Tech Stack
+      </h3>
       {/* <div className='flex flex-row flex-wrap justify-center gap-10'>
                 {technologies.map((technology) => {
                     const { ref, inView } = useInView({ triggerOnce: false, threshold: 0.1 }); // Detect when the section is in view
@@ -44,15 +46,8 @@ const Tech = () => {
           <div className="scrollingLeftContent">
             {[...topPart, ...topPart].map((item, index) => (
               <div key={index} className="tech">
-                <img
-                  src={item.image}
-                  alt={item.name}
-                  width={30}
-                  height={32}
-                />
-                <div className="techName title4">
-                  {item.name}
-                </div>
+                <img src={item.image} alt={item.name} width={30} height={32} />
+                <div className="techName title4">{item.name}</div>
               </div>
             ))}
           </div>
@@ -62,15 +57,8 @@ const Tech = () => {
           <div className="scrollingRightContent">
             {[...middlePart, ...middlePart].map((item, index) => (
               <div key={index} className="tech">
-                <img
-                  src={item.image}
-                  alt={item.name}
-                  width={30}
-                  height={32}
-                />
-                <div className="clsxtechName title4">
-                  {item.name}
-                </div>
+                <img src={item.image} alt={item.name} width={30} height={32} />
+                <div className="clsxtechName title4">{item.name}</div>
               </div>
             ))}
           </div>
@@ -80,15 +68,8 @@ const Tech = () => {
           <div className="scrollingLeftContent">
             {[...bottomPart, ...bottomPart].map((item, index) => (
               <div key={index} className="tech">
-                <img
-                  src={item.image}
-                  alt={item.name}
-                  width={30}
-                  height={32}
-                />
-                <div className="techName title4">
-                  {item.name}
-                </div>
+                <img src={item.image} alt={item.name} width={30} height={32} />
+                <div className="techName title4">{item.name}</div>
               </div>
             ))}
           </div>
