@@ -8,7 +8,7 @@ import { experiences } from "../config";
 const Experience = () => {
   return (
     <>
-      <motion.div className="my-20 c-space max-w-7xl mx-auto">
+      <motion.div className="my-20 c-space max-w-7xl mx-auto" id="experience">
         <h3 className="head-text max-w-7xl mx-auto">Work Experience</h3>
         <p className="grid-subtext">What I have done so far</p>
       </motion.div>

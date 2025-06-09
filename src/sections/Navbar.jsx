@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { navLinks } from "../config";
 import { logo } from "../assets";
 import close from "../assets/close.svg";
