@@ -22,6 +22,7 @@ import {
   netflix,
   swasthalaya,
   nexbilLogo,
+  mojito,
   bluefoxLogo,
 } from "./assets/index.js";
 
@@ -39,7 +40,7 @@ export const navLinks = [
   {
     id: 3,
     name: "Experience",
-    href: "#experience",  
+    href: "#experience",
   },
   {
     id: 3,
@@ -190,6 +191,28 @@ export const projects = [
     ],
     image: swasthalaya,
     live_link: "https://www.swasthalayanepal.com/",
+  },
+  {
+    name: "Mojito",
+    description:
+      "Mojito is a visually refreshing frontend project inspired by the classic cocktail, brought to life with smooth GSAP animations. The site showcases playful motion, scroll effects, and vibrant transitions that highlight the fun and zest of a mojito drink — all crafted with modern frontend techniques and a strong focus on user interaction.",
+    tags: [
+      {
+        name: "GSAP",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Next.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "javascript",
+        color: "green-text-gradient",
+      },
+    ],
+    image: mojito,
+    live_link: "https://mojitococktail.vercel.app/",
+    source_code_link: "https://github.com/Rowel-Maharjan/Mohito",
   },
   {
     name: "Job Portal",

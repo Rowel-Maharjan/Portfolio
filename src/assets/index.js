@@ -32,6 +32,7 @@ import copy from "./copy.svg";
 import jobPortal from "./JobPortal.png";
 import netflix from "./netflix.png";
 import swasthalaya from "./swasthalayas.png";
+import mojito from "./mojito.png";
 import nexbilLogo from "./nexbil-logo.webp";
 import bluefoxLogo from "./bluefox-logo.jpeg";
 
@@ -72,6 +73,7 @@ export {
   jobPortal,
   netflix,
   swasthalaya,
+  mojito,
   nexbilLogo,
   bluefoxLogo
 };
