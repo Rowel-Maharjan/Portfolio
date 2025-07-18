@@ -1,4 +1,4 @@
-import { twittersvg, insta, github } from "../assets";
+import { facebooksvg, insta, github } from "../assets";
 
 const Footer = () => {
   return (
@@ -16,9 +16,9 @@ const Footer = () => {
               <img src={github} alt="github" className="w-1/2 h-1/2" />
             </div>
           </a>
-          <a href="https://x.com/MaharjanRowel" target="_blank">
+          <a href="https://www.facebook.com/rowel.maharjan/" target="_blank">
             <div className="social-icon">
-              <img src={twittersvg} alt="twitter" className="w-1/2 h-1/2" />
+              <img src={facebooksvg} alt="twitter" className="w-1/2 h-1/2" />
             </div>
           </a>
           <a href="https://www.instagram.com/rowel_mhz/" target="_blank">

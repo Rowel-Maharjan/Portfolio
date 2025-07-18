@@ -19,7 +19,7 @@ import todo from "./todo.png";
 import productdetail from "./productdetail.png";
 import twitter from "./twitter.png";
 import logo from "./logo.png";
-import twittersvg from "./twitter.svg";
+import facebooksvg from "./facebook.svg";
 import insta from "./instagram.svg";
 import github from "./github.svg";
 import grid1 from "./grid1.png";
@@ -32,6 +32,7 @@ import copy from "./copy.svg";
 import jobPortal from "./JobPortal.png";
 import netflix from "./netflix.png";
 import swasthalaya from "./swasthalayas.png";
+import brushboss from "./brushboss.png";
 import mojito from "./mojito.png";
 import nexbilLogo from "./nexbil-logo.webp";
 import bluefoxLogo from "./bluefox-logo.jpeg";
@@ -46,6 +47,7 @@ export {
   javascript,
   mongodb,
   nodejs,
+  brushboss,
   reactjs,
   redux,
   tailwind,
@@ -59,7 +61,7 @@ export {
   productdetail,
   twitter,
   logo,
-  twittersvg,
+  facebooksvg,
   insta,
   github,
   grid1,

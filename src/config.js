@@ -24,6 +24,7 @@ import {
   nexbilLogo,
   mojito,
   bluefoxLogo,
+  brushboss,
 } from "./assets/index.js";
 
 export const navLinks = [
@@ -191,6 +192,27 @@ export const projects = [
     ],
     image: swasthalaya,
     live_link: "https://www.swasthalayanepal.com/",
+  },
+  {
+    name: "Brush Boss Painting & Decorating",
+    description:
+      "Designed and developed a modern, responsive website for a professional Australian painting service Company. Implemented user-friendly UI for showcasing services, client testimonials, and project galleries. Integrated admin features for managing service listings and inquiries using modern web technologies like Next.js, Tailwind CSS, MongoDB, and Prisma ORM.",
+    tags: [
+      {
+        name: "Next.js",
+        color: "green-text-gradient",
+      },
+      {
+        name: "PrismaORM",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "MongoDB",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: brushboss,
+    live_link: "https://www.brushbosspainting.com.au/",
   },
   {
     name: "Mojito",

@@ -1,4 +1,3 @@
-import React from "react";
 import github from "../assets/github.png";
 import arrowup from "../assets/arrow-up.png";
 import { Tilt } from "react-tilt";
