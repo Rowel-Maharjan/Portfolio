@@ -25,6 +25,7 @@ import {
   mojito,
   bluefoxLogo,
   brushboss,
+  prajwal,
 } from "./assets/index.js";
 
 export const navLinks = [
@@ -194,6 +195,27 @@ export const projects = [
     live_link: "https://www.swasthalayanepal.com/",
   },
   {
+    name: "Prajwal Lama – Artist Portfolio Website",
+    description:
+      "Designed and developed a visually captivating and responsive portfolio website for Nepal-based artist Prajwal Lama. The website highlights his journey, artworks, music videos, and creative expressions. Built with Next.js, TypeScript, Tailwind CSS, MongoDB, and Prisma ORM, the platform allows seamless content updates and smooth navigation.",
+    tags: [
+      {
+        name: "Next.js",
+        color: "green-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "MongoDB",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: prajwal,
+    live_link: "https://www.prajwallama.com/",
+  },
+  {
     name: "Brush Boss Painting & Decorating",
     description:
       "Designed and developed a modern, responsive website for a professional Australian painting service Company. Implemented user-friendly UI for showcasing services, client testimonials, and project galleries. Integrated admin features for managing service listings and inquiries using modern web technologies like Next.js, Tailwind CSS, MongoDB, and Prisma ORM.",
@@ -214,6 +236,7 @@ export const projects = [
     image: brushboss,
     live_link: "https://www.brushbosspainting.com.au/",
   },
+
   {
     name: "Mojito",
     description:

@@ -36,11 +36,13 @@ import brushboss from "./brushboss.png";
 import mojito from "./mojito.png";
 import nexbilLogo from "./nexbil-logo.webp";
 import bluefoxLogo from "./bluefox-logo.jpeg";
+import prajwal from "./prajwal.png";
 
 import CV from "./CV - Rowel Maharjan.pdf";
 
 export {
   css,
+  prajwal,
   figma,
   git,
   html,
