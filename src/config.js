@@ -45,12 +45,12 @@ export const navLinks = [
     href: "#experience",
   },
   {
-    id: 3,
+    id: 4,
     name: "Projects",
     href: "#projects",
   },
   {
-    id: 4,
+    id: 5,
     name: "Contact",
     href: "#contact",
   },
