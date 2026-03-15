@@ -570,11 +570,11 @@ export const experiences = [
     ],
   },
   {
-    title: "Web Developer (Internship)",
+    title: "Full Stack Developer(Internship)",
     company_name: "Nexbil",
     icon: nexbilLogo,
     iconBg: "#FFFFFF",
-    date: "January 2025 - March 2025",
+    date: "December 2025 - March 2025",
     points: [
       "Developed 'Swasthalaya', a full-stack health management web application handling both frontend Next.js and backend (Next.js, MongoDB).",
       "Built and deployed the official company website featuring service listings, portfolio, and contact forms to enhance digital presence.",
